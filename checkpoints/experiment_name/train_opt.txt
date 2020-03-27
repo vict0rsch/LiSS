@@ -1,0 +1,86 @@
+----------------- Options ---------------
+               D_rotation: False                         
+          auxiliary_tasks: rotation, gray, depth, jigsaw 
+               batch_size: 2                             	[default: 1]
+                    beta1: 0.5                           
+          checkpoints_dir: ./checkpoints                 
+           continue_train: False                         
+                crop_size: 256                           
+                 dataroot: ../continual-translation/s2w_d	[default: None]
+             dataset_mode: unaligned                     
+     depth_loss_threshold: 0.5                           
+                direction: AtoB                          
+              display_env: main                          
+             display_freq: 400                           
+               display_id: 1                             
+            display_ncols: 4                             
+             display_port: 8097                          
+           display_server: http://localhost              
+          display_winsize: 256                           
+      encoder_merge_ratio: 1.0                           
+                    epoch: latest                        
+              epoch_count: 1                             
+                 gan_mode: lsgan                         
+                 git_hash: None                          
+                  gpu_ids: -1                            	[default: 0]
+      gray_loss_threshold: 0.5                           
+         i_loss_threshold: 0.5                           
+                init_gain: 0.02                          
+                init_type: normal                        
+                 input_nc: 3                             
+                  isTrain: True                          	[default: None]
+     jigsaw_acc_threshold: 0.2                           
+                lambda_CA: 10.0                          
+                lambda_CB: 10.0                          
+                 lambda_D: 1.0                           
+                lambda_DA: 1.0                           
+                lambda_DB: 1.0                           
+                lambda_DR: 1.0                           
+                 lambda_G: 1.0                           
+                 lambda_I: 0.5                           
+                 lambda_J: 1.0                           
+                 lambda_R: 1.0                           
+      lambda_distillation: 5.0                           
+                load_iter: 0                             	[default: 0]
+                load_size: 286                           
+                       lr: 0.0002                        
+           lr_decay_iters: 50                            
+                 lr_depth: 0                             
+                  lr_gray: 0                             
+                lr_jigsaw: 0                             
+                lr_policy: linear                        
+              lr_rotation: 0                             
+         max_dataset_size: inf                           
+                  message: None                          
+                    model: liss                          	[default: cycle_gan]
+                 n_epochs: 100                           
+           n_epochs_decay: 100                           
+               n_layers_D: 3                             
+                     name: experiment_name               
+                      ndf: 64                            
+                     netD: basic                         
+                     netG: liss                          	[default: resnet_9blocks]
+                      ngf: 64                            
+               no_dropout: True                          
+                  no_flip: False                         
+                  no_html: False                         
+                     norm: instance                      
+              num_threads: 6                             
+                output_nc: 3                             
+                    phase: train                         
+                pool_size: 50                            
+               preprocess: resize_and_crop               
+               print_freq: 100                           
+                repr_mode: freeze                        
+   rotation_acc_threshold: 0.2                           
+             save_by_iter: False                         
+          save_epoch_freq: 5                             
+         save_latest_freq: 5000                          
+              sbatch_file: None                          
+           serial_batches: False                         
+               small_data: -1                            
+                   suffix:                               
+            task_schedule: liss                          	[default: parallel]
+         update_html_freq: 1000                          
+                  verbose: False                         
+----------------- End -------------------

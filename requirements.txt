@@ -1,0 +1,6 @@
+torch
+torchvision
+numpy
+comet_ml
+black
+flake8
