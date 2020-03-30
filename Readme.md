@@ -2,7 +2,7 @@
 
 This repo contains the **Pytorch** code for the paper [**Towards Lifelong Self-Supervision For Unpaired Image-to-Image Translation**]()
 
-<img src="figures/model.png" style="display: block;margin-left: auto; margin-right: auto; width: 50%;"/>
+![](figures/model.png) 
 
 It is not very user-friendly (yet?) and some experimental tricks / comments will be lying around.
 
@@ -175,7 +175,8 @@ parser.add_argument(
 ```
 
 ### Generated Horse to Zebra
-<img src="figures/sample_h2z.png" style="display: block;margin-left: auto; margin-right: auto; width: 70%;"/>
+
+![](figures/sample_h2z.png) 
 Comparison of models on the horse -> zebra dataset, with rows corresponding the image to translate (row 0) then translations from: CycleGAN (row 1), LiSS CycleGAN (row 2), Parallel Schedule (row 3), Sequential schedule(row 4). Note: the slight discrepancy in cropping is due to data-loading randomness.
 
 ## Code
